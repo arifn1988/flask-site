@@ -1,0 +1,15 @@
+name: ssh
+# Only trigger, when the build workflow succeeded
+on:
+  workflow_run:
+    workflows: ["CI build"]
+    types:
+      - completed
+      jobs:
+       print-hello:
+      # Specify on which operating system we want this workflow to run
+        runs-on: ubuntu-20.04
+        # The steps that will be excuted
+        steps:
+          - name: Print
+            run: echo "Hello, world!"
