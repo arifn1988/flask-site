@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content%}
+<h1>Hello this is my webpage</h1>
+
+<p>
+  This is a site with which you can read xml files. Just take a xml link for the internet and paste it into the input field.\n 
+  Here is a <a href="https://nos.nl/feeds" target='_blank'>link</a> with some rss you can try.
+</p>
+
+<form method='POST'>
+  <label for="url">Enter rss file</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <input type="submit" value="read">
+</form>
+
+{%if invalid_url%} 
+<p>{{error}}</p>
+{% endif %}
+
+{% for item in news %}
+<h2><a href={{item.link}} target="_blank" >{{item.title}}</a></h2>
+<h3>{{item.pubDate}}</h3>
+<p ><b>{{item.description}}</b></p>
+{% endfor%}
+
+{% endblock content%}
