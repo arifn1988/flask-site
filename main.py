@@ -4,7 +4,6 @@ import xml.etree.ElementTree as ET
 import requests
 import validators
 
-#https://www.youtube.com/watch?v=DhUpxWjOhME
 
 app = Flask(__name__)
 
