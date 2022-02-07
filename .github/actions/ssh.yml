@@ -2,7 +2,7 @@ name: ssh
 # Only trigger, when the build workflow succeeded
 on:
   workflow_run:
-    workflows: ["CI build"]
+    workflows: ["Run-test"]
     types:
       - completed
       jobs:
