@@ -5,3 +5,9 @@ on:
     workflows: ["Run tests"]
     types:
       - completed
+jobs:
+  print-hello:
+    runs-on: ubuntu-20.04 
+    steps:
+      -name: Print
+      run: echo "Hello, world!"
