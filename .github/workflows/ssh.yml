@@ -8,4 +8,4 @@ jobs:
     # The steps that will be excuted
     steps:
     - name: Print
-      run: echo "Hello, world!"
+      run: echo "Test print!"
