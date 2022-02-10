@@ -1,6 +1,6 @@
 name: Print Hello
 
-on: workflow_dispatch
+on: push 
 jobs:
   print-hello:
     # Specify on which operating system we want this workflow to run
