@@ -17,3 +17,9 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run tests
         run: pytest
+  connect:
+    runs-on: ubuntu-20.04
+    needs: run-tests
+    steps:
+      - name: printline
+        run: echo "Task succesfull"
