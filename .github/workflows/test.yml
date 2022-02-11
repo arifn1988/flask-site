@@ -28,3 +28,5 @@ jobs:
           known_hosts: 'Just a placeholder to avoid errors'
       - name: known-hosts
         run: ssh-keyscan -H ${{secrets.SSH_HOST}} >> ~/.ssh/known_hosts
+      - name: upload-website
+        run: echo "Uploading website"
