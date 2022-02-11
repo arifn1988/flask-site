@@ -26,5 +26,3 @@ jobs:
         with: 
           key: ${{secrets.SSH_PRIVATE_KEY}}
           known_hosts: 'Just a placeholder so we get no errors'
-      - name: known-hosts
-        run: ssh-keyscan -H ${{secrets.SSH_HOST}} >> ~/.ssh 
