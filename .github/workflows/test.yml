@@ -21,5 +21,8 @@ jobs:
     runs-on: ubuntu-20.04
     needs: run-tests
     steps:
-      - name: install-ssh-keys
-        run: echo "installing ssh keys"
+      - name: ssh-key
+        uses: shimataro/ssh-key-action@v2
+        with: 
+          key: ${{secrets.SSH_PRIVATE_KEY}}
+          known_hosts: 'Just a placeholder so we get no errors'
