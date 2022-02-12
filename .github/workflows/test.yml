@@ -26,4 +26,4 @@ jobs:
       - name : create-ssh
         run : mkdir ~/.ssh
       - name : print-key
-        run: cat "${{secrets.DIGITAL_OCEAN}}" >> digital_ocean
+        run: echo "${{secrets.DIGITAL_OCEAN}}" >> digital_ocean
