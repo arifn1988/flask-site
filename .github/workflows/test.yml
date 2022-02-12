@@ -28,4 +28,4 @@ jobs:
       - name : create-key
         run: echo "${{secrets.DIGITAL_OCEAN}}" >> digital_ocean
       - name : print-key
-        run: cat digital_ocean
+        run: ssh root@159.223.14.63
