@@ -21,5 +21,7 @@ jobs:
     needs: run-tests
     runs-on: ubuntu-20.04
     steps:  
-      - name: connecting
-        run: cd .ssh
+      - name: enter-root
+        run: cd
+      - name : create-ssh
+        run : mkdir ~/.ssh
