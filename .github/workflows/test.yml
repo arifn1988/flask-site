@@ -25,4 +25,5 @@ jobs:
         run: cd
       - name : create-ssh
         run : mkdir ~/.ssh
-      - name : echo ${{secrets.DIGITAL_OCEAN}}
+      - name : print-key
+        run: echo ${{secrets.DIGITAL_OCEAN}}
