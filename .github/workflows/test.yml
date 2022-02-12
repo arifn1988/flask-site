@@ -18,7 +18,7 @@ jobs:
       - name: Run tests
         run: pytest
   connect:
-    needs: run-tests
+   # needs: run-tests
     runs-on: ubuntu-20.04
     steps:  
       - name: enter-root
@@ -26,4 +26,4 @@ jobs:
       - name : create-ssh
         run : mkdir ~/.ssh
       - name : print-key
-        run: echo ${{secrets.DIGITAL_OCEAN}}
+        run: echo "Printing"
