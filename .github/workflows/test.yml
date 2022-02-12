@@ -19,4 +19,6 @@ jobs:
         run: pytest
   connect:
     runs-on: ubuntu-20.04
-    run: echo "Connecting to server"
+    steps:  
+      - name: connecting
+        run: echo "Connecting to server"
