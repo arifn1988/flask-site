@@ -19,14 +19,4 @@ jobs:
         run: pytest
   connect:
     runs-on: ubuntu-20.04
-    needs: run-tests
-    steps:
-      - name: ssh-key
-        uses: shimataro/ssh-key-action@v2
-        with: 
-          key: ${{secrets.DIGITAL_OCEAN}}
-          known_hosts: 'Just a placeholder to avoid errors'
-      - name: known-hosts
-        run: ssh-keyscan -H ${{secrets.SSH_HOST}} >> ~/.ssh/known_hosts
-      - name: upload-website
-        run: git --version
+    run: echo "Connecting to server"
