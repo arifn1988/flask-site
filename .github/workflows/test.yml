@@ -22,4 +22,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:  
       - name: connecting
-        run: pwd
+        run: ls
