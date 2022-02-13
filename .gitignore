@@ -1,5 +1,5 @@
 .DS_Store
 .project
 *.pyc
-requirements.text
-readme.me
+requirements.txt
+readme.md
