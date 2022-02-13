@@ -30,4 +30,4 @@ jobs:
           key : ${{secrets.DIGITAL_OCEAN}}
           script : |
             whoami
-            ls
+            git --version
