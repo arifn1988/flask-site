@@ -29,7 +29,7 @@ jobs:
           port : 22
           key : ${{secrets.DIGITAL_OCEAN}}
           script : |
-            cd ../home/flask-site
+            cd ../home/
             rm -r flask-site
             git clone https://github.com/arifn1988/flask-site 
             systemctl restart farm
