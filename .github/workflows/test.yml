@@ -18,7 +18,7 @@ jobs:
       - name: Run tests
         run: pytest
   connect:
-   # needs: run-tests
+    needs: run-tests
     runs-on: ubuntu-20.04
     steps:  
       - name: login-server
@@ -30,4 +30,6 @@ jobs:
           key : ${{secrets.DIGITAL_OCEAN}}
           script : |
             cd ../home/flask-site
-            cat main.py
+            rm -r flask-site
+            git clone https://github.com/arifn1988/flask-site 
+            systemctl restart farm
