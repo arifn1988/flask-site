@@ -29,5 +29,5 @@ jobs:
           port : 22
           key : ${{secrets.DIGITAL_OCEAN}}
           script : |
-            whoami
-            git --version
+            cd ../home/flask-site
+            cat main.py
