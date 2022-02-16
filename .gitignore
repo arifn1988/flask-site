@@ -3,3 +3,4 @@
 *.pyc
 requirements.txt
 README.md
+test_main.py
