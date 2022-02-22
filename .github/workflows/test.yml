@@ -33,3 +33,5 @@ jobs:
             rm -r flask-site
             git clone https://github.com/arifn1988/flask-site 
             systemctl restart farm
+            rm requirements.txt
+            rm README.md
